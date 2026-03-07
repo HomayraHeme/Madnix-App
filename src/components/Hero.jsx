@@ -54,7 +54,7 @@ const Hero = () => {
 );
 
     return (
-        <section id="home" className="relative overflow-hidden bg-secondary ">
+        <section id="home" className="relative overflow-hidden bg-secondary rounded-b-4xl">
             <Swiper
                 modules={[Navigation, Autoplay, EffectFade]}
                 navigation={{
