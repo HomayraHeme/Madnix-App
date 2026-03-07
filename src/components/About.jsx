@@ -30,7 +30,7 @@ const About = () => {
     }, []);
 
     return (
-        <section id="about" className="py-24 bg-white overflow-hidden">
+        <section id="about" className="pt-24 mb-3 pb-3 bg-white overflow-hidden px-4">
             <div className="max-w-[1320px] mx-auto px-5">
                 {/* Header Section */}
                 <div className="mb-12">

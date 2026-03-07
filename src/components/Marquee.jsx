@@ -1,9 +1,74 @@
-import React from 'react'
+ import React from 'react';
+import './Marquee.css';
 
-export default function Marquee() {
+const Marquee = ({ 
+  items = [
+    'CARDIOLOGY',
+    'DENTAL CARE', 
+    'PSYCHIATRY', 
+    'OPHTHALMOLOGY', 
+    'PHYSICAL THERAPY',
+    'NEUROLOGY',
+    'DERMATOLOGY',
+    'PEDIATRICS'
+  ],
+  speed = '200s',
+  iconColor = 'black',
+  textColors = [
+    '#2c3e50',
+    '#2980b9',
+  ]
+}) => {
   return (
-    <div>
-      
+    <div className="marquee">
+      <div 
+        className="marquee-inner" 
+        style={{ '--scroll-speed': speed }}
+      >
+        {/* First set */}
+        <div className="marquee-content">
+          {items.map((item, index) => (
+            <React.Fragment key={`first-${index}`}>
+              <div 
+                className="marquee-text" 
+                style={{ color: textColors[index % textColors.length] }}
+              >
+                <span>{item}</span>
+                {index < items.length - 1 && (
+                  <i 
+                    aria-hidden="true" 
+                    className="flaticon-asterisk-1"
+                    style={{ color: iconColor }}
+                  ></i>
+                )}
+              </div>
+            </React.Fragment>
+          ))}
+        </div>
+
+        {/* Duplicate set for seamless loop */}
+        <div className="marquee-content" aria-hidden="true">
+          {items.map((item, index) => (
+            <React.Fragment key={`second-${index}`}>
+              <div 
+                className="marquee-text" 
+                style={{ color: textColors[index % textColors.length] }}
+              >
+                <span>{item}</span>
+                {index < items.length - 1 && (
+                  <i 
+                    aria-hidden="true" 
+                    className="flaticon-asterisk-1"
+                    style={{ color: iconColor }}
+                  ></i>
+                )}
+              </div>
+            </React.Fragment>
+          ))}
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default Marquee;

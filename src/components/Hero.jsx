@@ -77,7 +77,7 @@ const Hero = () => {
                             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent z-[1]" />
                         </div>
                         
-                        <div className="relative z-[2] max-w-[1320px] mx-auto px-10 flex flex-col lg:flex-row items-center justify-between h-full pt-32 pb-20">  
+                        <div className="relative z-[2] max-w-[1320px] mx-auto px-30 flex flex-col lg:flex-row items-center justify-between h-full pt-32 pb-20">  
                             <div className="max-w-[750px] animate-[fadeInUp_0.8s_ease-out]">
                                 <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-[5px] px-3 py-2.5 text-[14px] text-white font-medium mb-8">
                                     <span className="bg-primary bg-[#159fba] px-3 py-1 rounded-[5px] text-[11px] font-bold">MENDIX</span>
@@ -102,7 +102,7 @@ const Hero = () => {
                             <div className="absolute inset-0 bg-black/40 z-[1]" />
                             <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-transparent z-[1]" />
                         </div>
-                        <div className="relative z-[2] max-w-[1320px] mx-auto px-10 flex flex-col lg:flex-row items-center justify-between h-full pt-32 pb-20"> 
+                        <div className="relative z-[2] max-w-[1320px] mx-auto px-30 flex flex-col lg:flex-row items-center justify-between h-full pt-32 pb-20"> 
                             <div className="max-w-[750px]">
                                 <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-white/20 rounded-[5px] px-3 py-2.5 text-[14px] text-white font-medium mb-8">
                                     <span className="bg-primary bg-[#159fba] px-3 py-1 rounded-[5px] text-[11px] font-bold uppercase">Mendix</span>

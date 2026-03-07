@@ -174,3 +174,24 @@ textarea {
     animation: fadeInLeft 1s ease-out forwards;
   }
 }
+
+ @keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* 50% mane holo content-er ordhek porjonto move hobe */
+    transform: translateX(-50%);
+  }
+}
+
+.custom-marquee-container {
+  display: flex;
+  width: max-content; /* Eita must, jate content screen er baire jete pare */
+  animation: marquee 30s linear infinite;
+}
+
+/* Mouse hover korle pause hobe (optional) */
+.custom-marquee-container:hover {
+  animation-play-state: paused;
+}

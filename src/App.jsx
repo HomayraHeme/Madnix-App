@@ -34,9 +34,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Marquee />
       <Services />
       <Benefits />
-      <Marquee />
+      
       <Doctors />
       <Testimonials />
       <Blog />
