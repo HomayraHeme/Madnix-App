@@ -22,7 +22,7 @@ const Navbar = () => {
     ];
 
     return (
-        <header className={`fixed left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'top-0' : 'top-6'}`}>
+        <header className={`fixed left-0 right-0 z-50 transition-all duration-800 ${scrolled ? 'top-0' : 'top-6'}`}>
             <div className={`w-full  transition-all duration-500`}>
                 <div className={`flex items-center justify-between px-8 h-20 transition-all duration-500
                     ${scrolled ? 'bg-[#0a1d2e] rounded-b-2xl shadow-xl' : 'bg-transparent'}
@@ -75,7 +75,7 @@ const Navbar = () => {
                         {/* Appointment Button */}
                         <a
     href="#appointment"
-    className="group cursor-pointer relative bg-[#159fba] text-white font-bold text-sm px-2 py-3 rounded-[5px] transition-all duration-300 ease-in-out shadow hover:shadow-lg w-42 h-12 flex items-center gap-3 max-sm:hidden"
+    className="group cursor-pointer relative bg-[#159fba] text-white   px-2 py-3 rounded-[5px] transition-all duration-300 ease-in-out shadow hover:shadow-lg w-40 h-12 flex items-center gap-3 max-sm:hidden"
 >
     <div className="relative pl-3 flex items-center justify-center gap-2 overflow-hidden">
        
@@ -89,7 +89,7 @@ const Navbar = () => {
         </span>
 
         
-        <div className="relative  w-10 h-10 bg-white group-hover:bg-[#0a1d2e] rounded-[5px] flex items-center justify-center overflow-hidden transition-all duration-300">
+        <div className="relative   w-8 h-8 bg-white group-hover:bg-[#0a1d2e] rounded-[5px] flex items-center justify-center overflow-hidden transition-all duration-300">
            
             <HiOutlineArrowRight 
                 size={14} 
