@@ -180,18 +180,95 @@ textarea {
     transform: translateX(0);
   }
   100% {
-    /* 50% mane holo content-er ordhek porjonto move hobe */
     transform: translateX(-50%);
   }
 }
 
 .custom-marquee-container {
   display: flex;
-  width: max-content; /* Eita must, jate content screen er baire jete pare */
+  width: max-content;  
   animation: marquee 30s linear infinite;
 }
 
-/* Mouse hover korle pause hobe (optional) */
-.custom-marquee-container:hover {
+ .custom-marquee-container:hover {
   animation-play-state: paused;
+}
+/* Reveal Container */
+ .reveal-container {
+  position: relative;
+  width: 200px;
+  height: 80px;
+  overflow: hidden;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 5px;
+}
+
+ .group:hover .reveal-container {
+  width: 300px; 
+}
+
+ .reveal-img {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.group:hover .reveal-img {
+  opacity: 1;
+}
+
+/* button explore */
+
+.cta {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cta span {
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  color: #234567;  
+  transition: color 0.3s ease;
+  margin-left: 10px;
+}
+
+.cta svg {
+  position: relative;
+  margin-left: 10px;
+  fill: none;
+  stroke: #234567;  
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: translateX(-5px); 
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* --- HOVER STATE --- */
+
+
+.cta:hover span {
+  color: #17A2B8;  
+}
+
+.cta:hover svg {
+  stroke: #17A2B8;  
+  transform: translateX(10px);  
+}
+
+.cta:active {
+  transform: scale(0.95);
 }

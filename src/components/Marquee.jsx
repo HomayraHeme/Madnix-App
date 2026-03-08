@@ -25,8 +25,7 @@ const Marquee = ({
         className="marquee-inner" 
         style={{ '--scroll-speed': speed }}
       >
-        {/* First set */}
-        <div className="marquee-content">
+         <div className="marquee-content">
           {items.map((item, index) => (
             <React.Fragment key={`first-${index}`}>
               <div 
@@ -46,8 +45,7 @@ const Marquee = ({
           ))}
         </div>
 
-        {/* Duplicate set for seamless loop */}
-        <div className="marquee-content" aria-hidden="true">
+         <div className="marquee-content" aria-hidden="true">
           {items.map((item, index) => (
             <React.Fragment key={`second-${index}`}>
               <div 

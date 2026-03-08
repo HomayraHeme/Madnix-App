@@ -37,7 +37,6 @@ function App() {
       <Marquee />
       <Services />
       <Benefits />
-      
       <Doctors />
       <Testimonials />
       <Blog />
