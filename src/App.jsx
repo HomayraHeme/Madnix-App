@@ -6,10 +6,9 @@ import Services from './components/Services';
 import Benefits from './components/Benefits';
 import Marquee from './components/Marquee';
 import Doctors from './components/Doctors';
-import Testimonials from './components/Testimonials';
-import Blog from './components/Blog';
-import Footer from './components/Footer';
 import Marquee2 from './components/Marquee2';
+import Marquee3 from './components/Marquee3';
+import Appointment from './components/Appointment';
 
 function App() {
   useEffect(() => {
@@ -40,9 +39,9 @@ function App() {
       <Benefits />
       <Marquee2></Marquee2>
       <Doctors />
-      <Testimonials />
-      <Blog />
-      <Footer />
+      <Marquee3/> 
+      <Appointment />
+      
 
        <button
   className="fixed bottom-[40px] right-[40px] w-14 h-14 bg-[#17A2B8] text-white flex items-center justify-center shadow-[0_10px_30px_rgba(23,162,184,0.3)] transition-all duration-500 z-[999] cursor-pointer group overflow-visible"

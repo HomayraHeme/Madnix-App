@@ -1,7 +1,7 @@
  import React from 'react';
 import { HiOutlineArrowRight } from 'react-icons/hi';
 import { FaUserFriends, FaBrain, FaLeaf, FaStethoscope, FaMicroscope, FaSyringe } from 'react-icons/fa';
-
+import { motion } from 'framer-motion';
 const services = [
     { 
         icon: <FaStethoscope />, 
@@ -59,18 +59,30 @@ const Services = () => {
             <div className="max-w-[1320px] mx-auto px-5 relative z-10">
                 
                 {/* Header Section from Image */}
-                <div className="text-center mb-16">
-                    <div className="inline-flex items-center gap-2 bg-[#f0f9fa] border border-[#d1eff2] rounded-full px-5 py-1.5 text-[15px] font-semibold text-[#17A2B8] mb-6">
-                        <span className="w-2 h-2 bg-[#17A2B8] rounded-full animate-pulse" />
-                        Our Department
-                    </div>
-                    <h2 className="text-[45px] md:text-[55px]  text-[#1a2b48] leading-tight">
-                        Comprehensive Medical Services <br />
-                        <span className="text-[#1a2b48]">for </span>
-                        <span className="font-serif italic text-[#17A2B8] font-normal">Your Health</span>
-                    </h2>
-                </div>
-                
+                 <div className="text-center mb-16">
+    <motion.div 
+        className="inline-flex items-center gap-2 bg-[#f0f9fa] border border-[#d1eff2] rounded-full px-5 py-1.5 text-[15px] font-semibold text-[#17A2B8] mb-6"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+    >
+        <span className="w-2 h-2 bg-[#17A2B8] rounded-full animate-pulse" />
+        Our Department
+    </motion.div>
+    
+    <motion.h2 
+        className="text-[45px] md:text-[55px] text-[#1a2b48] leading-tight"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: true }}
+    >
+        Comprehensive Medical Services <br />
+        <span className="text-[#1a2b48]">for </span>
+        <span className="font-serif italic text-[#17A2B8] font-normal">Your Health</span>
+    </motion.h2>
+</div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {services.map((service, idx) => (
                         <div key={idx} className="group bg-[#f8fcfc] rounded-[5px] p-12 border border-1 border-slate-400 transition-all duration-500 hover:bg-white hover:shadow-2xl hover:border-slate-100">
@@ -78,7 +90,7 @@ const Services = () => {
                             {/* Image Reveal Section */}
                             <div className="reveal-container mb-10 flex">
                                 <div 
-                                    className="min-w-[80px] h-20 flex items-center justify-center text-3xl text-white rounded-[5px] z-10"
+                                    className=" min-w-[80px]  h-20 flex items-center justify-center text-3xl text-white rounded-[5px] z-10"
                                     style={{ backgroundColor: service.color }}
                                 >
                                     {service.icon}

@@ -207,7 +207,7 @@ textarea {
   width: 300px; 
 }
 
- .reveal-img {
+  .reveal-img {
   position: absolute;
   top: 0;
   left: 60px;
@@ -216,6 +216,18 @@ textarea {
   object-fit: cover;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+}
+
+ @media (max-width: 480px) {
+   .reveal-img {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 100px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;}
 }
 
 .group:hover .reveal-img {
