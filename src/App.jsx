@@ -9,6 +9,7 @@ import Doctors from './components/Doctors';
 import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import Marquee2 from './components/Marquee2';
 
 function App() {
   useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
       <Marquee />
       <Services />
       <Benefits />
+      <Marquee2></Marquee2>
       <Doctors />
       <Testimonials />
       <Blog />

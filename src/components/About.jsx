@@ -90,7 +90,7 @@ const About = () => {
                     <div className="lg:col-span-4 flex flex-col pt-10 lg:pt-0 relative lg:top-[-100px]">
                          <div className="relative mb-10">
                             <h2
-                                className="text-[180px] md:text-[220px] font-black leading-none tracking-tighter select-none"
+                                className="text-[180px] md:text-[200px] font-black leading-none tracking-tighter select-none"
                                 style={{
                                     backgroundImage: "url('https://mednix.themeht.com/wp-content/uploads/2025/10/34.jpg')",
                                     backgroundSize: 'cover',

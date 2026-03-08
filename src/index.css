@@ -272,3 +272,20 @@ textarea {
 .cta:active {
   transform: scale(0.95);
 }
+
+
+/* Keyframe Animations */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+/* Custom Marquee Utility Class */
+.custom-marquee-scroll {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 40s linear infinite; 
+}
+
+.custom-marquee-scroll:hover {
+  animation-play-state: paused; }

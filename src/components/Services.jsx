@@ -49,7 +49,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="py-24 bg-white relative overflow-hidden">
+        <section id="services" className="py-24 bg-white relative overflow-hidden px-4">
             
             {/* Background Text */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[150px] md:text-[250px] font-black text-slate-100/30 whitespace-nowrap pointer-events-none select-none uppercase z-0">
