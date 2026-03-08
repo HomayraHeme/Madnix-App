@@ -41,10 +41,8 @@ const Benefits = () => {
                             <img 
                                 src={image}
                                 alt="Doctor" 
-                                // h-full ar object-cover image ke stretch hote dibe na
                                 className="w-full h-full object-cover"  
                             />
-                            {/* Overlay gradient jodi dorkar hoy side e mix korar jonno */}
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#0a122a]/20 lg:to-transparent" />
                         </div>
                     </div>
