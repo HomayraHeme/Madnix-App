@@ -1,16 +1,26 @@
-# React + Vite
+## Mednix Frontend Clone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This project is a frontend clone of the 
+## template (https://mednix.themeht.com/).
+The task was part of a job assignment to replicate the design and functionality of the Mednix landing page and internal pages using modern frontend technologies.
+## A live version of this project can be accessed at: https://madnix-app.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The main goal of this project was to practice translating a professional UI/UX design into a fully responsive, interactive web application, while following best practices in modern frontend development.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.HTML5 / CSS3 / JavaScript (ES6+)
+2.React.js for component-based architecture
+3.Tailwind CSS for styling
+4.Framer Motion for animations
+5.Swiper.js for carousel/sliders
+6.React Icons for iconography
 
-## Expanding the ESLint configuration
+## Project Purpose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1.Practice building pixel-perfect frontend replicas of professional UI designs
+2Implement responsive design, animations, and interactive UI components
+3.Strengthen skills in modern frontend tools and workflow
+
